@@ -1,0 +1,23 @@
+services:
+  bet-marker:
+    build:
+      context: ../..
+      dockerfile: envs/dev/Dockerfile
+    ports:
+      - '8000:8000'
+    env_file:
+      - ../../.env
+    volumes:
+      - ../../app:/app
+    restart: unless-stopped
+
+  postgres:
+    image: mirror.gcr.io/postgres:16.2
+    restart: unless-stopped
+    env_file:
+      - ../../.env
+    volumes:
+      - postgres:/var/lib/postgresql/dataz
+
+volumes:
+  postgres:
