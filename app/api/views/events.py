@@ -1,8 +1,6 @@
 """Views for events routers."""
 
-from uuid import UUID
-
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, status
 from app.utils.constants import LINE_PROVIDER_URL
 
 import httpx
