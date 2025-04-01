@@ -3,7 +3,7 @@
 from enum import Enum
 
 
-class BetStatusEnum(str, Enum):
+class EventStatusEnum(str, Enum):
     in_progress = 'In progress'
     win = 'Win'
     loss = 'Loss'

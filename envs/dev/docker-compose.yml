@@ -10,6 +10,8 @@ services:
     volumes:
       - ../../app:/betting/app
     restart: unless-stopped
+    depends_on:
+      - postgres
     networks:
       - betting
 
