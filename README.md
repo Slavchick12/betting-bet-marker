@@ -1,4 +1,9 @@
 # Bet Marker
+## Описание сервиса
+Сервис предназначен для постановку ставок на события пользователями.
+
+Документацию API доступна по адресу: http://127.0.0.1:8001/api/redoc
+Swagger доступен по адресу: http://127.0.0.1:8001/api/swagger
 
 ## Информация по развертыванию проекта
 ##### Шаг 1. Склонируйте репозиторий на локальную машину
@@ -7,7 +12,7 @@ git clone https://github.com/Slavchick12/betting-bet-marker.git
 ```
 ##### Шаг 2. Добавьте .env файл в директорию /envs/dev/.env
 ##### Шаг 3. Заполните .env файл опираясь на пример /envs/dev/.env.example
-##### Шаг 4. Создайте сеть network "betting" для docker compose
+##### Шаг 4. Создайте сеть network "betting" для docker compose, если её не существует
 ```bash
 docker network create betting
 ```
